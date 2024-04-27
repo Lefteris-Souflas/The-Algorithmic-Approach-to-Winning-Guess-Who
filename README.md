@@ -1,4 +1,4 @@
-# Guess Who Best Questions
+# Guess Who? Best Questions
 This repository came as a need after playing several games with my young sons. I decided to develop a model to find the best strategy for winning the game and hand over to them in order for my sons to become better players.
 ## Guess Who? Rules
 For anyone that does not know how Guess Who? is played read the following (it is a really simple but interesting game):
