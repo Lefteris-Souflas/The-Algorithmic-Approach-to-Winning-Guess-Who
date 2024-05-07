@@ -12,7 +12,7 @@ The data that this ML model was trained on originate from the &copy; 2018 Hasbro
 
 ![image](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/be7eedad-e712-4c29-a516-905935a8e9e4)
 
-I created a [dataset](Guess-Who-Characters-Questions.csv) with all 24 characters in its rows with their English and Greek names (as the game was played in the Greek version of it) in the first 2 columns. The next 18 columns include a question per column with a Yes (1) or No (0) answer per character (row). A **summary** of all characteristics are presented in the figure below.
+I created a [dataset](guess_who_dataset.csv) with all 24 characters in its rows with their English and Greek names (as the game was played in the Greek version of it) in the first 2 columns. The next 18 columns include a question per column with a Yes (1) or No (0) answer per character (row). A **summary** of all characteristics are presented in the figure below.
 
 ![Guess-Who-Characters-Summary](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/60a710dc-1e58-46d1-9ac5-aff3df44bd78)
 
