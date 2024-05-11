@@ -16,7 +16,7 @@ I created a [dataset](guess_who_dataset.csv) with all 24 characters in its rows 
 
 ![Guess-Who-Characters-Summary](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/60a710dc-1e58-46d1-9ac5-aff3df44bd78)
 
-Then, I inserted the dataset into an **Oracle Database** using **SQL Developer**, as shown in the figure below. 
+Then, I inserted the dataset into an **Oracle Database** using **SQL Developer**, as shown in the figure below, in order to utilize Oracle Data Mining (ODM) to find quickly the best strategy.
 
 ![Screenshot 2024-04-28 220634](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/3afc6074-92fe-4ea6-ac54-9a43cd94b6b7)
 
