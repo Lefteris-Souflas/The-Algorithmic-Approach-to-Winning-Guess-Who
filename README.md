@@ -55,7 +55,7 @@ Regrettably, this approach failed to yield anticipated results, encountering a f
 
 ## Alternative Approach: Employing Python Scikit-Learn
 
-In lieu of the Oracle Data Mining (ODM) approach, **Python's Scikit-Learn** library was harnessed to delve into the intricacies of optimal strategy formulation for the "Guess Who?" game. The [implemented code](https://github.com/Lefteris-Souflas/The-Algorithmic-Approach-to-Winning-Guess-Who/blob/main/guess_who_code.ipynb) orchestrates a meticulously structured sequence of tasks encompassing data preparation, model training, feature importance analysis, and decision tree visualization. This holistic approach is tailored to enhance comprehension and strategic insight into effective gameplay tactics.
+In lieu of the Oracle Data Mining (ODM) approach, **Python's Scikit-Learn** library was harnessed to delve into the intricacies of optimal strategy formulation for the "Guess Who?" game. The [implemented code](https://github.com/Lefteris-Souflas/The-Algorithmic-Approach-to-Winning-Guess-Who/blob/main/guess_who_code.ipynb) orchestrates a carefully structured sequence of tasks encompassing data preparation, model training, feature importance analysis, and decision tree visualization. This holistic approach is tailored to enhance comprehension and strategic insight into effective gameplay tactics.
 
 ### Package Management and Environment Setup
 To ensure streamlined management of Python package dependencies, the provided code block initiates with an endeavor to capture the current state of installed packages within the environment. This information is then preserved in a file named "freeze_file.txt", serving as a comprehensive record before proceeding with the installation of requisite packages specific to the Jupyter Notebook. The "requirements.txt" file specifies essential packages alongside their version numbers, facilitating seamless installation and alignment of the project environment with necessary dependencies.
@@ -70,7 +70,7 @@ Following dataset ingestion, segmentation into distinct entities is performed, d
 Decision Trees, renowned for their versatility, represent a non-parametric supervised learning technique employed across classification and regression tasks. These models endeavor to construct a decision-making framework predicated on elementary decision rules deduced from dataset features, thereby facilitating prediction of the target variable. In our context, Decision Trees play a pivotal role in character identification within the "Guess Who?" game, employing a systematic questioning approach akin to gameplay mechanics.
 
 #### Model Instantiation and Configuration
-The Decision Tree Classifier instantiation involves meticulous configuration of various parameters governing model behavior and structure. Each parameter's value is meticulously chosen to optimize model efficacy and align with the inherent characteristics of the dataset. Key parameters include:
+The Decision Tree Classifier instantiation involves conscientious configuration of various parameters governing model behavior and structure. Each parameter's value is diligently chosen to optimize model efficacy and align with the inherent characteristics of the dataset. Key parameters include:
 
 - **criterion**: Determines the impurity measure for node splitting, with 'gini' indicating Gini impurity.
 - **splitter**: Dictates the strategy for selecting node splits, with 'best' opting for optimal splits.
@@ -80,9 +80,11 @@ The Decision Tree Classifier instantiation involves meticulous configuration of 
 - **random_state**: Ensures reproducibility of results by fixing the random seed.
 
 #### Model Training and Visualization
-Following instantiation, the Decision Tree Classifier undergoes training on the dataset's features and classes. Post-training, the decision tree is visualized to elucidate the decision-making process underlying character identification. This visualization, facilitated by DOT data and the Graphviz library, offers a comprehensive depiction of decision pathways and criteria, enhancing strategic insight and gameplay efficacy.
+Following instantiation, the Decision Tree Classifier undergoes training on the dataset's features and classes. Post-training, the decision tree is visualized to elucidate the decision-making process underlying character identification. This visualization, facilitated by DOT data and the Graphviz library, offers a comprehensive depiction of decision pathways and criteria, enhancing strategic insight and gameplay efficacy. 
 
 ![image](https://github.com/Lefteris-Souflas/The-Algorithmic-Approach-to-Winning-Guess-Who/assets/143879796/458de1e6-10cd-45d9-85f4-8845bb223ce3)
+
+<code><b>The aforementioned decision tree visualization methodology is replicated across the top 11 features of each ensemble model, namely Random Forest, Gradient Boosting, and Light Gradient Boosting. This process entails subjecting the identified features from each ensemble model to the decision tree visualization procedure delineated previously.</b></code>
 
 ### Random Forest Modeling
 #### Random Forest Overview
@@ -156,3 +158,14 @@ The performance and efficacy of each model are summarized based on the minimum a
 
 The results of the models implemented above can be reproduced by running the [Jupyter Notebook](https://github.com/Lefteris-Souflas/The-Algorithmic-Approach-to-Winning-Guess-Who/blob/main/guess_who_code.ipynb).
 
+## Diagram Creation
+
+To enhance the visualization of the implemented optimal model, we employed the **draw.io** tool. This facilitated the creation of diagrams that offer greater insight, conciseness, and informativeness compared to those generated by the Python code utilized previously. Within the Diagrams folder, users can find the corresponding `.drawio` files along with the exported images representing both the English and Greek versions of the game, in both Horizontal and Vertical flows.
+
+Below are the Horizontal flow representations of the created diagrams:
+
+### Best Strategy for Winning the "Guess Who?" Game (English - Αγγλικά)
+![Guess-Who-Decision-Tree-English-Horizontal](https://github.com/Lefteris-Souflas/The-Algorithmic-Approach-to-Winning-Guess-Who/assets/143879796/99dc7157-11d2-4f4d-873d-6a6de929c00c)
+
+### Η καλύτερη στρατηγική για να κερδίσετε το "Μάντεψε ποιος;" (Greek - Ελληνικά)
+![Guess-Who-Decision-Tree-Greek-Horizontal](https://github.com/Lefteris-Souflas/The-Algorithmic-Approach-to-Winning-Guess-Who/assets/143879796/0acaf425-ecab-4e69-8896-7dc0ccefd7ae)
