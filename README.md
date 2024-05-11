@@ -1,22 +1,55 @@
-# The Algorithmic Way of Playing "Guess Who?" Game
+# The Algorithmic Approach to Winning the "Guess Who?" Game
 
-This repository came as a need after playing several games with my young sons. I decided to develop a model to find the best strategy for winning the game and hand over to them in order for my sons to become better players.
+This repository emerges from the necessity observed during numerous sessions of playing the "Guess Who?" game with my children. Recognizing an opportunity to enhance their gameplay, I embarked on developing a model aimed at determining the optimal strategy for winning the game.
 
-## "Guess Who?" Rules
-For anyone that does not know how "Guess Who?" game is played read the following (it is a really simple but interesting game):
+## Understanding the "Guess Who?" Game
 
-According to [Hasbro's Official Instructions](https://instructions.hasbro.com/en-nz/instruction/Guess-Who--Classic-Game), each player chooses a mystery character and then using yes or no questions, they try to figure out the other player's mystery character. When they think they know who their opponent's mystery character is, players make a guess. If the guess is wrong, that player loses the game! Players can also challenge opponents to a series of games in the Championship Series, where the first player to win 5 games is the "Guess Who?" champion.
+For those unfamiliar with the mechanics of the "Guess Who?" game, it involves players selecting a mystery character each. Through a series of yes or no questions, players attempt to deduce the identity of their opponent's mystery character. A successful guess leads to victory, while an incorrect guess results in defeat. Furthermore, players can engage in a Championship Series, where the first to win 5 games claims the title of "Guess Who?" champion.
 
-## Data
-The data that this ML model was trained on originate from the &copy; 2018 Hasbro characters of the game, as shown in the figure taken from [Geeky Hobbies History of Guess Who? webpage](https://www.geekyhobbies.com/history-of-guess-who/).
+For detailed instructions, refer to [Hasbro's Official Instructions](https://instructions.hasbro.com/en-nz/instruction/Guess-Who--Classic-Game).
+
+## Dataset Overview
+
+Utilizing characters from the &copy; 2018 Hasbro collection, this machine learning (ML) model is trained on data extracted from the game, as shown in the figure taken from [Geeky Hobbies History of Guess Who? webpage](https://www.geekyhobbies.com/history-of-guess-who/).
 
 ![image](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/be7eedad-e712-4c29-a516-905935a8e9e4)
 
-I created a [dataset](guess_who_dataset.csv) with all 24 characters in its rows with their English and Greek names (as the game was played in the Greek version of it) in the first 2 columns. The next 18 columns include a question per column with a Yes (1) or No (0) answer per character (row). A **summary** of all characteristics are presented in the figure below.
+The [dataset](guess_who_dataset.csv), comprising 24 characters, includes their English and Greek names (pertaining to the Greek version of the game). Each character is described by a set of attributes, with a binary (Yes/No) value indicating their possession of each trait. A comprehensive **summary** of these attributes is provided below:
 
 ![Guess-Who-Characters-Summary](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/60a710dc-1e58-46d1-9ac5-aff3df44bd78)
 
-Then, I inserted the dataset into an **Oracle Database** using **SQL Developer**, as shown in the figure below, in order to utilize Oracle Data Mining (ODM) to find quickly the best strategy.
+## Initial Approach: Leveraging Oracle Data Mining
+
+To expedite the process of identifying optimal strategies, the dataset was integrated into an **Oracle Database** using **SQL Developer**.
 
 ![Screenshot 2024-04-28 220634](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/3afc6074-92fe-4ea6-ac54-9a43cd94b6b7)
 
+Employing Oracle Data Mining (ODM), an attempt was made to leverage decision tree models. Guided by the instructions available on the [Oracle Help Center](https://docs.oracle.com/en/database/oracle/oracle-database/19/tutorial-apply-decision-tree/index.html), the following steps were undertaken:
+
+- **Workflow Creation and Model Selection:**
+  - Selected the Class Build node in the workflow.
+  - Deselected all models except for the Decision Tree (DT) model.
+  - Parameters of the Decision Tree were adjusted to foster the growth of a maximally informative tree.
+  - Added a new Data Source node.
+  - Selected the table GUESS_WHO.
+  - Connected the GUESS_WHO node to the Class Build node.
+  - Copied and pasted the GUESS_WHO node and renamed the node to GUESS_WHO_APPLY.
+  - Connected the Class Build node and the GUESS_WHO_APPLY node to the Apply Model node.
+
+- **Model Execution:**
+  - Ran the Apply Model node.
+  - Checked for green check marks on all workflow nodes.
+
+Regrettably, this approach failed to yield anticipated results, encountering a formidable challenge. Despite meticulous parameterization, an unresolved error surfaced, primarily attributed to the presence of unique values within the target variable. Consequently, an alternative avenue was pursued, invoking Python Scikit-Learn as the subsequent analytical framework.
+
+![Screenshot 2024-05-11 142656](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/70c1e22c-730a-4afa-a851-740eee5f2a20)
+
+![Screenshot 2024-05-11 143348](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/83f022ec-5d0d-43fb-94ac-1e3a29a02537)
+
+![Screenshot 2024-05-11 143408](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/dd952c06-9bb5-41db-887f-6eef4abeb00d)
+
+![Screenshot 2024-05-11 143636](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/570c597a-7597-4c18-bf0f-91de4a1c1d09)
+
+![Screenshot 2024-05-11 143709](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/7faa399b-c6d0-4f87-a28b-a462938c113b)
+
+## Alternative Approach: Python Scikit-Learn
