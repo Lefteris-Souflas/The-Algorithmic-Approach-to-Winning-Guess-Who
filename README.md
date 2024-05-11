@@ -24,7 +24,7 @@ To expedite the process of identifying optimal strategies, the dataset was integ
 
 ![Screenshot 2024-04-28 220634](https://github.com/Lefteris-Souflas/Guess-Who-Best-Questions/assets/143879796/3afc6074-92fe-4ea6-ac54-9a43cd94b6b7)
 
-Employing Oracle Data Mining (ODM), an attempt was made to leverage decision tree models. Guided by the instructions available on the [Oracle Help Center](https://docs.oracle.com/en/database/oracle/oracle-database/19/tutorial-apply-decision-tree/index.html), the following steps were undertaken:
+Employing **Oracle Data Mining (ODM)**, an attempt was made to leverage decision tree models. Guided by the instructions available on the [Oracle Help Center](https://docs.oracle.com/en/database/oracle/oracle-database/19/tutorial-apply-decision-tree/index.html), the following steps were undertaken:
 
 - **Workflow Creation and Model Selection:**
   - Selected the Class Build node in the workflow.
@@ -34,13 +34,14 @@ Employing Oracle Data Mining (ODM), an attempt was made to leverage decision tre
   - Selected the table GUESS_WHO.
   - Connected the GUESS_WHO node to the Class Build node.
   - Copied and pasted the GUESS_WHO node and renamed the node to GUESS_WHO_APPLY.
-  - Connected the Class Build node and the GUESS_WHO_APPLY node to the Apply Model node.
+  - Added an Apply node.
+  - Connected the Class Build node and the GUESS_WHO_APPLY node to the Apply node.
 
 - **Model Execution:**
-  - Ran the Apply Model node.
+  - Ran the Apply node.
   - Checked for green check marks on all workflow nodes.
 
-Regrettably, this approach failed to yield anticipated results, encountering a formidable challenge. Despite meticulous parameterization, an unresolved error surfaced, primarily attributed to the presence of unique values within the target variable. Consequently, an alternative avenue was pursued, invoking Python Scikit-Learn as the subsequent analytical framework.
+Regrettably, this approach failed to yield anticipated results, encountering a formidable challenge. Despite meticulous parameterization, an unresolved error surfaced, primarily attributed to the presence of unique values within the target variable. Consequently, an alternative avenue was pursued, invoking **Python Scikit-Learn** as the subsequent analytical framework.
 
 ![Screenshot 2024-05-11 142656](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/70c1e22c-730a-4afa-a851-740eee5f2a20)
 
@@ -53,3 +54,4 @@ Regrettably, this approach failed to yield anticipated results, encountering a f
 ![Screenshot 2024-05-11 143709](https://github.com/Lefteris-Souflas/The-Algorithmic-Way-of-Playing-Guess-Who/assets/143879796/7faa399b-c6d0-4f87-a28b-a462938c113b)
 
 ## Alternative Approach: Python Scikit-Learn
+
