@@ -2,6 +2,32 @@
 
 This repository emerges from the necessity observed during numerous sessions of playing the "Guess Who?" game with my children. Recognizing an opportunity to enhance their gameplay, I embarked on developing a model aimed at determining the optimal strategy for winning the game.
 
+## Repository Description
+
+This repository serves as a comprehensive resource center for implementing an algorithmic approach to winning the "Guess Who?" game. Developed with meticulous attention to detail and informed by advanced machine learning techniques, it offers a systematic methodology for enhancing gameplay strategy and optimizing decision-making processes within the game.
+
+### Key Features:
+
+1. **Algorithmic Strategy Development**: Through rigorous analysis and experimentation, this repository provides insights into the optimal strategies for playing the "Guess Who?" game. By leveraging machine learning algorithms and data-driven decision-making, it offers a sophisticated framework for achieving strategic superiority in gameplay.
+
+2. **Dataset Utilization**: The repository incorporates a meticulously curated dataset comprising characters from the "Guess Who?" game. This dataset serves as the foundation for training machine learning models, enabling the identification of key features and patterns essential for strategic gameplay.
+
+3. **Model Implementation**: Utilizing state-of-the-art machine learning libraries such as Scikit-Learn and LightGBM, the repository implements a range of ensemble models including Random Forest, Gradient Boosting, and Light Gradient Boosting. These models are trained on the dataset to facilitate data-driven decision-making and strategic optimization.
+
+4. **Visualization Tools**: In addition to model implementation, the repository offers visualization tools to enhance comprehension and insight generation. Utilizing draw.io, it enables the creation of informative diagrams that offer intuitive representations of decision-making processes and strategic pathways within the game.
+
+5. **Documentation and Resources**: Comprehensive documentation and resources accompany the repository, providing detailed insights into methodology, model implementation, and visualization techniques. These resources serve as invaluable guides for understanding and leveraging the algorithmic approach to winning the "Guess Who?" game.
+
+### Target Audience:
+
+- **Game Enthusiasts**: Individuals passionate about the "Guess Who?" game and eager to enhance their gameplay strategy through advanced algorithms and machine learning techniques.
+  
+- **Machine Learning Practitioners**: Data scientists, researchers, and enthusiasts interested in applying machine learning methodologies to unconventional domains such as board games.
+
+- **Educators and Researchers**: Professionals seeking educational resources or research insights into the application of machine learning in recreational activities and strategic decision-making.
+
+By offering a unique blend of gaming and machine learning expertise, this repository empowers users to delve into the fascinating intersection of artificial intelligence and recreational gameplay, unlocking new dimensions of strategy, analysis, and enjoyment within the "Guess Who?" universe.
+
 ## Understanding the "Guess Who?" Game
 
 For those unfamiliar with the mechanics of the "Guess Who?" game, it involves players selecting a mystery character each. Through a series of yes or no questions, players attempt to deduce the identity of their opponent's mystery character. A successful guess leads to victory, while an incorrect guess results in defeat. Furthermore, players can engage in a Championship Series, where the first to win 5 games claims the title of "Guess Who?" champion.
