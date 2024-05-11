@@ -4,13 +4,13 @@ This repository emerges from the necessity observed during numerous sessions of 
 
 ## Repository Description
 
-This repository serves as a comprehensive resource center for implementing an algorithmic approach to winning the "Guess Who?" game. Developed with meticulous attention to detail and informed by advanced machine learning techniques, it offers a systematic methodology for enhancing gameplay strategy and optimizing decision-making processes within the game.
+This repository serves as a comprehensive resource center for implementing an algorithmic approach to winning the "Guess Who?" game. Developed with scrupulous attention to detail and informed by advanced machine learning techniques, it offers a systematic methodology for enhancing gameplay strategy and optimizing decision-making processes within the game.
 
 ### Key Features:
 
 1. **Algorithmic Strategy Development**: Through rigorous analysis and experimentation, this repository provides insights into the optimal strategies for playing the "Guess Who?" game. By leveraging machine learning algorithms and data-driven decision-making, it offers a sophisticated framework for achieving strategic superiority in gameplay.
 
-2. **Dataset Utilization**: The repository incorporates a meticulously curated dataset comprising characters from the "Guess Who?" game. This dataset serves as the foundation for training machine learning models, enabling the identification of key features and patterns essential for strategic gameplay.
+2. **Dataset Utilization**: The repository incorporates a rigorously curated dataset comprising characters from the "Guess Who?" game. This dataset serves as the foundation for training machine learning models, enabling the identification of key features and patterns essential for strategic gameplay.
 
 3. **Model Implementation**: Utilizing state-of-the-art machine learning libraries such as Scikit-Learn and LightGBM, the repository implements a range of ensemble models including Random Forest, Gradient Boosting, and Light Gradient Boosting. These models are trained on the dataset to facilitate data-driven decision-making and strategic optimization.
 
